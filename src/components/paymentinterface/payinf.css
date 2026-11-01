@@ -1,0 +1,277 @@
+/* =========================================
+   PAYMENT INFORMATION PAGE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Main Container */
+
+.payment-container {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+
+  padding: 40px 20px;
+
+  background: #fff8f5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   SEARCH CARD
+========================================= */
+
+.payment-search-card {
+  width: 100%;
+  max-width: 650px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #f7e1e6;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.payment-title {
+  margin-bottom: 20px;
+
+  color: #4d3636;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   PHONE SEARCH
+========================================= */
+
+.phone-search {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.phone-input {
+  width: 100%;
+
+  min-width: 0;
+
+  padding: 12px 16px;
+
+  border: 1px solid #e5cbd2;
+
+  border-radius: 25px;
+
+  outline: none;
+
+  color: #4d3636;
+
+  background: #fffafa;
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+
+.phone-input::placeholder {
+  color: #aaa;
+}
+
+
+/* Input Focus */
+
+.phone-input:focus {
+  border-color: #d46a8c;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(212, 106, 140, 0.12);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.payment-btn {
+  flex-shrink: 0;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #d46a8c;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Button Hover */
+
+.payment-btn:hover {
+  background: #c45176;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(212, 106, 140, 0.3);
+}
+
+
+/* Button Active */
+
+.payment-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   RESULT AREA
+========================================= */
+
+.payment-container > div:not(.payment-search-card) {
+  width: 100%;
+  max-width: 650px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .payment-container {
+    padding: 30px 15px;
+  }
+
+  .payment-search-card {
+    padding: 25px;
+  }
+
+  .payment-title {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .payment-container {
+    padding: 20px 12px;
+
+    gap: 20px;
+  }
+
+
+  .payment-search-card {
+    padding: 20px;
+
+    border-radius: 16px;
+  }
+
+
+  .payment-title {
+    margin-bottom: 18px;
+
+    font-size: 23px;
+  }
+
+
+  /* Stack input and button */
+
+  .phone-search {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+
+  .phone-input {
+    width: 100%;
+
+    padding: 12px 15px;
+  }
+
+
+  .payment-btn {
+    width: 100%;
+
+    padding: 12px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .payment-search-card {
+    padding: 16px;
+  }
+
+  .payment-title {
+    font-size: 21px;
+  }
+
+  .phone-input {
+    font-size: 14px;
+  }
+
+  .payment-btn {
+    font-size: 13px;
+  }
+
+}

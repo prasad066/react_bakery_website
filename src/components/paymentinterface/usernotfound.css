@@ -1,0 +1,262 @@
+/* ================================
+   User Registration / Not Found
+   ================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+.registration-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 40px 20px;
+  background: #fff8f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Registration Card */
+.registration-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+
+  background: #ffffff;
+  border: 1px solid #f3dce2;
+  border-radius: 22px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form-header h2 {
+  margin: 0 0 8px;
+
+  color: #d46a8c;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.form-header p {
+  margin: 0;
+
+  color: #777;
+  font-size: 14px;
+}
+
+/* Form Group */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #4d3636;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  min-width: 0;
+
+  padding: 12px 16px;
+
+  border: 1px solid #e5cbd2;
+  border-radius: 12px;
+
+  outline: none;
+
+  background: #fffafa;
+  color: #4d3636;
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.form-input:focus {
+  border-color: #d46a8c;
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(212, 106, 140, 0.12);
+}
+
+/* Select */
+.membership-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.membership-select option {
+  color: #4d3636;
+}
+
+/* Register Button */
+.register-button-container {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.register-button-container a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.register-btn {
+  display: block;
+
+  width: 100%;
+  min-height: 46px;
+
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #d46a8c;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #c45176;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(212, 106, 140, 0.3);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   Tablet
+   ================================ */
+
+@media (max-width: 768px) {
+
+  .registration-wrapper {
+    padding: 30px 15px;
+    align-items: flex-start;
+  }
+
+  .registration-card {
+    max-width: 550px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+  .form-header h2 {
+    font-size: 27px;
+  }
+}
+
+
+/* ================================
+   Mobile
+   ================================ */
+
+@media (max-width: 600px) {
+
+  .registration-wrapper {
+    min-height: calc(100vh - 60px);
+    padding: 20px 12px;
+  }
+
+  .registration-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .form-header {
+    margin-bottom: 22px;
+  }
+
+  .form-header h2 {
+    font-size: 24px;
+  }
+
+  .form-header p {
+    font-size: 13px;
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-input {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .register-button-container {
+    margin-top: 20px;
+  }
+
+  .register-btn {
+    min-height: 44px;
+    padding: 11px;
+    font-size: 15px;
+  }
+}
+
+
+/* ================================
+   Small Mobile
+   ================================ */
+
+@media (max-width: 380px) {
+
+  .registration-wrapper {
+    padding: 15px 10px;
+  }
+
+  .registration-card {
+    padding: 18px 15px;
+  }
+
+  .form-header h2 {
+    font-size: 22px;
+  }
+
+  .form-header p {
+    font-size: 12px;
+  }
+
+  .form-input {
+    font-size: 13px;
+  }
+
+  .register-btn {
+    font-size: 14px;
+  }
+}

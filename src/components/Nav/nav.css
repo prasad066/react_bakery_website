@@ -1,0 +1,507 @@
+/* =========================================
+   CAKENEST NAVBAR
+   ========================================= */
+
+.navbar {
+    position: relative;
+
+    width: 100%;
+    min-height: 90px;
+
+    padding: 0 6% !important;
+
+    display: flex;
+    align-items: center;
+
+    background: #fff8fb !important;
+
+    border-bottom: 1px solid #f1dfe7;
+
+    box-shadow:
+        0 4px 18px rgba(15, 23, 42, 0.06);
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   NAVBAR CONTAINER
+   ========================================= */
+
+.navbar .container-fluid {
+    width: 100%;
+    min-height: 90px;
+
+    padding: 0 !important;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   CAKENEST LOGO + BRAND
+   ========================================= */
+
+.navbar-brand,
+.cakenest-brand {
+    margin-right: auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 30px !important;
+    font-weight: 800;
+
+    letter-spacing: -0.8px;
+
+    color: #d9466f !important;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar-brand:hover,
+.cakenest-brand:hover {
+    color: #be345b !important;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   LOGO IMAGE
+   ========================================= */
+
+.cakenest-logo {
+    width: 72px;
+    height: 72px;
+
+    display: block;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        filter 0.25s ease;
+}
+
+
+.navbar-brand:hover .cakenest-logo,
+.cakenest-brand:hover .cakenest-logo {
+    transform: rotate(-4deg) scale(1.05);
+}
+
+
+/* =========================================
+   NAVIGATION AREA
+   ========================================= */
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+
+.navbar-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0 !important;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* =========================================
+   NAV ITEM
+   ========================================= */
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   NAV LINKS
+   ========================================= */
+
+.navbar .nav-link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    padding: 10px 16px !important;
+
+    border-radius: 10px;
+
+    font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #334155 !important;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* =========================================
+   LINK HOVER
+   ========================================= */
+
+.navbar .nav-link:hover {
+    color: #d9466f !important;
+
+    background: #fff0f5;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ACTIVE CART
+   ========================================= */
+
+.navbar .nav-link.active {
+    color: #d9466f !important;
+
+    background: #ffe4ec;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CART HOVER
+   ========================================= */
+
+.navbar .nav-link.active:hover {
+    color: #be345b !important;
+
+    background: #ffd6e2;
+}
+
+
+/* =========================================
+   CART PILL
+   ========================================= */
+
+.navbar .nav-item:last-child .nav-link {
+    margin-left: 4px;
+
+    padding: 10px 18px !important;
+
+    border-radius: 12px;
+
+    background: #ffe4ec;
+
+    color: #d9466f !important;
+
+    font-weight: 700;
+}
+
+
+.navbar .nav-item:last-child .nav-link:hover {
+    background: #ffd6e2;
+
+    color: #be345b !important;
+}
+
+
+/* =========================================
+   BOOTSTRAP TOGGLER
+   ========================================= */
+
+.navbar-toggler {
+    width: 44px;
+    height: 44px;
+
+    padding: 8px !important;
+
+    margin-left: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #f0cdd9 !important;
+
+    border-radius: 10px !important;
+
+    background: #ffffff;
+
+    box-shadow: none !important;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.navbar-toggler:hover {
+    background: #fff0f5;
+
+    border-color: #e9a9bb !important;
+
+    transform: translateY(-1px);
+}
+
+
+.navbar-toggler:focus {
+    box-shadow:
+        0 0 0 3px rgba(217, 70, 111, 0.15) !important;
+}
+
+
+/* =========================================
+   TOGGLER ICON
+   ========================================= */
+
+.navbar-light .navbar-toggler-icon {
+    width: 20px;
+    height: 20px;
+
+    background-size: 20px 20px;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 992px) {
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991.98px) {
+
+    .navbar {
+        min-height: 80px;
+
+        padding: 0 5% !important;
+    }
+
+
+    .navbar .container-fluid {
+        min-height: 80px;
+    }
+
+
+    .navbar-brand,
+    .cakenest-brand {
+        font-size: 27px !important;
+    }
+
+
+    .cakenest-logo {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    .navbar-collapse {
+        width: 100%;
+
+        padding: 14px 0 18px;
+    }
+
+
+    .navbar-nav {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 5px;
+    }
+
+
+    .navbar .nav-link {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        padding: 12px 15px !important;
+
+        box-sizing: border-box;
+    }
+
+
+    .navbar .nav-item:last-child .nav-link {
+        margin-left: 0;
+
+        margin-top: 4px;
+
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        min-height: 70px;
+
+        padding: 0 16px !important;
+    }
+
+
+    .navbar .container-fluid {
+        min-height: 70px;
+    }
+
+
+    .navbar-brand,
+    .cakenest-brand {
+        font-size: 23px !important;
+
+        gap: 8px;
+    }
+
+
+    .cakenest-logo {
+        width: 55px;
+        height: 55px;
+
+        border-radius: 12px;
+    }
+
+
+    .navbar-toggler {
+        width: 42px;
+        height: 42px;
+
+        margin-left: 8px;
+    }
+
+
+    .navbar-collapse {
+        padding-top: 12px;
+
+        padding-bottom: 14px;
+    }
+
+
+    .navbar .nav-link {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .navbar-brand,
+    .cakenest-brand {
+        font-size: 21px !important;
+
+        gap: 6px;
+    }
+
+
+    .cakenest-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .navbar-toggler {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
+.navbar .nav-link:focus-visible,
+.navbar-brand:focus-visible,
+.cakenest-brand:focus-visible {
+    outline: 3px solid #f9a8c0;
+
+    outline-offset: 2px;
+}
+
+
+.navbar-toggler:focus-visible {
+    outline: 3px solid #f9a8c0;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .navbar-brand,
+    .cakenest-brand,
+    .navbar .nav-link,
+    .navbar-toggler,
+    .cakenest-logo {
+        transition: none;
+    }
+}

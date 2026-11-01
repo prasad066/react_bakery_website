@@ -1,0 +1,311 @@
+/* =========================================
+   RECEIPT WRAPPER
+========================================= */
+
+.receipt-wrapper {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 5px 0 20px;
+}
+
+
+/* =========================================
+   RECEIPT CARD
+========================================= */
+
+.receipt-card {
+  width: 100%;
+  max-width: 650px;
+
+  padding: 25px 30px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  border: 1px solid #f3dce2;
+
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   RECEIPT HEADER
+========================================= */
+
+.receipt-header {
+  padding-bottom: 18px;
+  margin-bottom: 15px;
+
+  border-bottom: 2px dashed #e5b6c3;
+
+  color: #d46a8c;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   RECEIPT ROW
+========================================= */
+
+.receipt-row {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #f5e8eb;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.receipt-label {
+  color: #777;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.receipt-value {
+  min-width: 0;
+
+  color: #4d3636;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-align: right;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   FINAL ROW
+========================================= */
+
+.final-row {
+  margin-top: 5px;
+
+  padding: 17px 0;
+
+  border-bottom: none;
+
+  border-top: 2px dashed #e5b6c3;
+}
+
+
+/* =========================================
+   FINAL AMOUNT
+========================================= */
+
+.final-amount {
+  color: #d46a8c;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   PAY BUTTON CONTAINER
+========================================= */
+
+.pay-button-container {
+  width: 100%;
+
+  margin-top: 18px;
+}
+
+
+/* =========================================
+   PAY NOW BUTTON
+========================================= */
+
+.pay-now-btn {
+  width: 100%;
+
+  min-height: 45px;
+
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #d46a8c;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+
+.pay-now-btn:hover {
+  background: #c45176;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(212, 106, 140, 0.3);
+}
+
+
+.pay-now-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .receipt-card {
+    padding: 22px 25px;
+  }
+
+  .receipt-header {
+    font-size: 25px;
+  }
+
+  .receipt-row {
+    padding: 10px 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .receipt-wrapper {
+    padding: 0 0 15px;
+  }
+
+
+  .receipt-card {
+    padding: 20px;
+
+    border-radius: 16px;
+  }
+
+
+  .receipt-header {
+    padding-bottom: 15px;
+
+    margin-bottom: 10px;
+
+    font-size: 23px;
+  }
+
+
+  .receipt-row {
+    gap: 10px;
+
+    padding: 9px 0;
+  }
+
+
+  .receipt-label {
+    font-size: 13px;
+  }
+
+
+  .receipt-value {
+    font-size: 14px;
+  }
+
+
+  .final-row {
+    padding: 14px 0;
+  }
+
+
+  .final-amount {
+    font-size: 22px;
+  }
+
+
+  .pay-button-container {
+    margin-top: 15px;
+  }
+
+
+  .pay-now-btn {
+    min-height: 43px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .receipt-card {
+    padding: 16px;
+  }
+
+
+  .receipt-header {
+    font-size: 21px;
+  }
+
+
+  .receipt-label {
+    font-size: 12px;
+  }
+
+
+  .receipt-value {
+    font-size: 13px;
+  }
+
+
+  .final-amount {
+    font-size: 20px;
+  }
+}
